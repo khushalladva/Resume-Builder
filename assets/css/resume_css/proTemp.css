@@ -1,0 +1,300 @@
+/* ===================================================
+   CV Builder — Professional Resume Template CSS (proTemp.css)
+   Professional Color Theory & Fully Responsive
+   =================================================== */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #334155;
+  background: #f1f5f9;
+  padding-bottom: 50px;
+}
+
+.caps {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.justified {
+  text-align: justify;
+}
+
+/* ── PAGE CONTAINER ── */
+.page {
+  width: 95%;
+  max-width: 960px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e2e8f0;
+}
+
+/* ── TOP BAR ── */
+.top-bar {
+  background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+  color: #ffffff;
+  padding: 35px 40px;
+  position: relative;
+}
+
+.top-bar .name {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+/* ── LAYOUT (SIDEBAR + MAIN CONTENT) ── */
+.sheet {
+  display: flex;
+  flex-direction: column;
+}
+
+.rela-block.page {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rela-block.top-bar {
+  width: 100%;
+}
+
+.side-bar {
+  width: 32%;
+  background-color: #f8fafc;
+  border-right: 1px solid #e2e8f0;
+  padding: 30px 24px;
+}
+
+.side-bar .mugshot {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.side-bar .mugshot img {
+  width: 130px;
+  height: 130px;
+  border-radius: 16px;
+  object-fit: cover;
+  border: 3px solid #2563eb;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.side-bar .context {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.side-bar .context span,
+.side-bar .context a {
+  color: #0f172a;
+  font-weight: 500;
+  text-decoration: none;
+  display: block;
+  margin-top: 2px;
+}
+
+.side-bar .context a:hover {
+  color: #2563eb;
+}
+
+.side-header {
+  font-size: 13px;
+  font-weight: 700;
+  color: #2563eb;
+  letter-spacing: 1.5px;
+  margin: 24px 0 8px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid #eff6ff;
+}
+
+.list-thing {
+  color: #475569;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.list-thing span {
+  color: #64748b;
+  font-size: 12px;
+}
+
+/* ── CONTENT CONTAINER ── */
+.content-container {
+  width: 68%;
+  padding: 35px 35px;
+  background: #ffffff;
+}
+
+.content-container .title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.content-container .separator {
+  height: 3px;
+  background: #2563eb;
+  width: 40px;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.content-container .greyed {
+  font-size: 13px;
+  font-weight: 700;
+  color: #2563eb;
+  letter-spacing: 1.5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f1f5f9;
+  padding-bottom: 4px;
+}
+
+.content-container p.long-margin {
+  color: #475569;
+  margin-bottom: 24px;
+  line-height: 1.65;
+}
+
+.content-container h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 18px 0 6px;
+}
+
+.content-container p.light {
+  color: #64748b;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.content-container p.light span {
+  color: #0f172a;
+  font-weight: 500;
+}
+
+.content-container ul {
+  list-style: disc;
+  padding-left: 20px;
+  margin-bottom: 14px;
+}
+
+.content-container ul li {
+  color: #475569;
+  margin-bottom: 4px;
+}
+
+/* ── FLOATING BUTTONS ── */
+.myBtn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 1000;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  color: #ffffff;
+  cursor: pointer;
+  padding: 12px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 18px rgba(37, 99, 235, 0.4);
+  transition: all 0.2s ease;
+}
+
+.myBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(37, 99, 235, 0.6);
+  color: #ffffff;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 84px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  background-color: #0f172a;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+}
+
+.scroll-to-top:hover {
+  background-color: #2563eb;
+  transform: scale(1.08);
+}
+
+@media print {
+  .myBtn, .scroll-to-top, .edit-button {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+
+  .page {
+    box-shadow: none;
+    border: none;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @page {
+    size: auto;
+    margin: 10mm;
+  }
+}
+
+/* ── RESPONSIVE RULES ── */
+@media (max-width: 768px) {
+  .side-bar,
+  .content-container {
+    width: 100% !important;
+  }
+
+  .side-bar {
+    border-right: none;
+    border-bottom: 1px solid #e2e8f0;
+    text-align: center;
+    padding: 24px 20px;
+  }
+
+  .top-bar {
+    padding: 24px 20px;
+    text-align: center;
+  }
+
+  .top-bar .name {
+    font-size: 24px;
+  }
+
+  .content-container {
+    padding: 24px 20px;
+  }
+}

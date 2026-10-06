@@ -1,0 +1,263 @@
+/* ===================================================
+   CV Builder — Clean Resume Template CSS (resumetemp1.css)
+   Professional Color Theory & Fully Responsive
+   =================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  background: #f1f5f9;
+  font-family: 'Inter', 'Lato', sans-serif;
+  font-weight: 400;
+  color: #334155;
+  font-size: 14px;
+  line-height: 24px;
+  padding-bottom: 50px;
+}
+
+.container {
+  max-width: 800px;
+  width: 95%;
+  background: #ffffff;
+  margin: 40px auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  padding: 45px 50px;
+  border: 1px solid #e2e8f0;
+}
+
+/* ── HEADER ── */
+.header {
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+  border-bottom: 2px solid #f1f5f9;
+}
+
+.header .full-name {
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.header .contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 14px;
+  margin-bottom: 16px;
+  font-size: 13px;
+  color: #64748b;
+}
+
+.header .contact-info .email,
+.header .contact-info .phone {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.header .contact-info .phone-val {
+  color: #475569;
+}
+
+.header .contact-info .separator {
+  height: 12px;
+  border-left: 1.5px solid #cbd5e1;
+  display: inline-block;
+}
+
+.header .about {
+  margin-top: 10px;
+}
+
+.header .position {
+  font-weight: 700;
+  font-size: 14px;
+  color: #2563eb;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.header .desc {
+  display: block;
+  margin-top: 6px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* ── SECTIONS & DETAILS ── */
+.details {
+  line-height: 22px;
+}
+
+.details .section {
+  margin-bottom: 30px;
+}
+
+.details .section:last-of-type {
+  margin-bottom: 0;
+}
+
+.details .section__title {
+  letter-spacing: 1.5px;
+  color: #2563eb;
+  font-weight: 700;
+  font-size: 13px;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  border-bottom: 1.5px solid #eff6ff;
+  padding-bottom: 4px;
+}
+
+.details .section__list-item {
+  margin-bottom: 16px;
+}
+
+.details .section__list-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.details .left {
+  vertical-align: top;
+  display: inline-block;
+  width: 60%;
+}
+
+.details .right {
+  vertical-align: top;
+  display: inline-block;
+  text-align: right;
+  width: 39%;
+}
+
+.details .name {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.details .name ul {
+  list-style: none;
+  padding: 0;
+}
+
+.details a {
+  text-decoration: none;
+  color: #2563eb;
+}
+
+.details a:hover {
+  text-decoration: underline;
+}
+
+.skills__item {
+  margin-bottom: 8px;
+}
+
+/* ── BUTTONS ── */
+.myBtn,
+.print-button {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  height: 44px;
+  padding: 0 24px;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.35);
+  transition: all 0.2s ease;
+}
+
+.myBtn:hover,
+.print-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5);
+  color: #ffffff;
+}
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 50px;
+  height: 50px;
+  background-color: #0f172a;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1000;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+}
+
+.scroll-to-top:hover {
+  background-color: #2563eb;
+  transform: scale(1.08);
+}
+
+@media print {
+  .print-button,
+  .scroll-to-top,
+  .edit-button,
+  .myBtn {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  @page {
+    size: auto;
+    margin: 15mm;
+  }
+}
+
+/* ── RESPONSIVE RULES ── */
+@media (max-width: 768px) {
+  .container {
+    padding: 28px 20px;
+    margin: 20px auto;
+  }
+
+  .header .full-name {
+    font-size: 26px;
+  }
+
+  .details .left,
+  .details .right {
+    width: 100%;
+    text-align: left;
+    display: block;
+  }
+
+  .details .right {
+    margin-top: 6px;
+  }
+}
